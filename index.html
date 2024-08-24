@@ -95,7 +95,32 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <a href="#" class="btn bg-book-primary font-extrabold text-xl">
+            <!-- Dropdown button for small devices -->
+            <div class="block md:hidden">
+              <button
+                id="dropdownMenuButton"
+                class="btn bg-book-primary font-extrabold text-xl flex items-center"
+              >
+              <i class="fa-solid fa-bars"></i>
+              </button>
+              <div
+                id="dropdownMenu"
+                class="hidden flex-col absolute bg-white shadow-md mt-2 rounded-md w-48"
+              >
+                <a href="#" class="btn bg-book-primary font-extrabold text-xl p-2">
+                  Book Consult
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 bg-black text-white text-wh w-8 h-8 rounded-full p-2"
+                  ></i>
+                </a>
+                <!-- Add more dropdown items here if needed -->
+              </div>
+            </div>
+            <!-- Regular "Book Consult" button for larger devices -->
+            <a
+              href="#"
+              class="btn bg-book-primary font-extrabold text-xl hidden md:flex"
+            >
               Book Consult
               <i
                 class="fa-solid fa-arrow-right -rotate-45 bg-black text-white text-wh w-8 h-8 rounded-full p-2"
@@ -394,7 +419,7 @@ position: relative;
     <textarea
       id="message"
       rows="4"
-      class="p-3 border border-gray-300 rounded-lg w-full lg:h-40 h-20 bg-white"
+      class="p-3 border border-gray-300 rounded-lg w-full mx-auto lg:h-40 h-20 bg-white"
       placeholder="Write Your Message..."
     ></textarea>
   </div>
@@ -419,14 +444,14 @@ position: relative;
       <p>
         The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
       </p>
-      <ul class="flex justify-between items-center mt-8 mx-auto space-x-1">
+      <ul class="flex justify-evenly items-center mt-8 mx-auto space-x-1">
         <li>Home</li>
         <li>Services</li>
         <li>Portfolio</li>
         <li>Blogs</li>
         <li>Contact Us</li>
       </ul>
-      <div class="mt-5">
+      <div class="mt-8">
         <a href="#" class="btn bg-book-primary font-extrabold text-xl">
           Book Consult
           <i
